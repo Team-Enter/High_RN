@@ -12,6 +12,7 @@ import TestQuestion from "./src/components/screens/TestQuestion";
 import TestResultHighSchool from "./src/components/screens/TestResultHighSchool";
 import TestResultLoading from "./src/components/screens/TestResultLoading";
 import TestStart from "./src/components/screens/TestStart";
+import FirstScreen from "./src/components/screens/FirstScreen";
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -19,16 +20,17 @@ const App = () => {
   return(
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
+        {/*<Stack.Screen name="FirstScreen" component={FirstScreen}/>
         <Stack.Screen name="HighSchoolInfo" component={HighSchoolInfo}/>
         <Stack.Screen name="Join" component={Join}/>
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="MainPage" component={MainPage}/>
-        <Stack.Screen name="MyPage" component={MyPage}/>
+        <Stack.Screen name="MyPage" component={MyPage}/>*/}
         <Stack.Screen name="StartScreen" component={StartScreen}/>
-        <Stack.Screen name="TestQuestion" component={TestQuestion}/>
+        {/*<Stack.Screen name="TestQuestion" component={TestQuestion}/>
         <Stack.Screen name="TestResultHighSchool" component={TestResultHighSchool}/>
         <Stack.Screen name="TestResultLoading" component={TestResultLoading}/>
-        <Stack.Screen name="TestStart" component={TestStart}/>
+        <Stack.Screen name="TestStart" component={TestStart}/>*/}
       </Stack.Navigator>
     </NavigationContainer>
   );
