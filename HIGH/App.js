@@ -2,17 +2,17 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
-import HighSchoolInfo from "./src/components/screens/HighSchoolInfo";
-import Join from "./src/components/screens/Join";
-import Login from "./src/components/screens/Login";
-import MainPage from "./src/components/screens/MainPage";
-import MyPage from "./src/components/screens/MyPage";
-import StartScreen from "./src/components/screens/StartScreen";
-import TestQuestion from "./src/components/screens/TestQuestion";
-import TestResultHighSchool from "./src/components/screens/TestResultHighSchool";
-import TestResultLoading from "./src/components/screens/TestResultLoading";
-import TestStart from "./src/components/screens/TestStart";
-import FirstScreen from "./src/components/screens/FirstScreen";
+import HighSchoolInfo from "./src/screens/HighSchoolInfo";
+import Join from "./src/screens/Join";
+import Login from "./src/screens/Login";
+import MainPage from "./src/screens/MainPage";
+import MyPage from "./src/screens/MyPage";
+import StartScreen from "./src/screens/StartScreen";
+import TestQuestion from "./src/screens/TestQuestion";
+import TestResultHighSchool from "./src/screens/TestResultHighSchool";
+import TestResultLoading from "./src/screens/TestResultLoading";
+import TestStart from "./src/screens/TestStart";
+import FirstScreen from "./src/screens/FirstScreen";
 
 const App = () => {
   const Stack = createNativeStackNavigator();

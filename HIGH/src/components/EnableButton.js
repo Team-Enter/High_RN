@@ -1,13 +1,13 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-// 첫 번째 화면
-const StartScreen = () => {
+// 활성화 버튼
+const EnableButton = () => {
   return (
     <View>
-      <Text>StartScreen</Text>
+      <Text>EnableButton</Text>
     </View>
   )
 }
 
-export default StartScreen
+export default EnableButton
