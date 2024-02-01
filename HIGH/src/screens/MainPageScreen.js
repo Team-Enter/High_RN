@@ -5,7 +5,7 @@ import React from 'react'
 const MainPageScreen = () => {
   return (
     <View>
-      <Text>MainPage</Text>
+      <Text>MainPageScreen</Text>
     </View>
   )
 }

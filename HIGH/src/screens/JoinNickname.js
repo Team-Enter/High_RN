@@ -2,12 +2,12 @@ import { View, Text } from 'react-native'
 import React from 'react'
 
 // 회원가입_닉네임
-const JoinNickname = () => {
+const JoinNicknameScreen = () => {
   return (
     <View>
-      <Text>JoinNickname</Text>
+      <Text>JoinNicknameScreen</Text>
     </View>
   )
 }
 
-export default JoinNickname
+export default JoinNicknameScreen

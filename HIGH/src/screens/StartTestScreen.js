@@ -2,7 +2,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 
 // 적성검사 시작
-const StartTestScreen = () => {
+const TestStartScreen = () => {
   return (
     <View>
       <Text>StartTestScreen</Text>
@@ -10,4 +10,4 @@ const StartTestScreen = () => {
   )
 }
 
-export default StartTestScreen
+export default TestStartScreen

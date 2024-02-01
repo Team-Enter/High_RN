@@ -5,7 +5,7 @@ import React from 'react'
 const JoinEmailIdPasswordScreen = () => {
   return (
     <View>
-      <Text>JoinEmailIdPassword</Text>
+      <Text>JoinEmailIdPasswordScreen</Text>
     </View>
   )
 }

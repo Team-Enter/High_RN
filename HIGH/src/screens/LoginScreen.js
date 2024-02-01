@@ -5,7 +5,7 @@ import React from 'react'
 const LoginScreen = () => {
   return (
     <View>
-      <Text>Login</Text>
+      <Text>LoginScreen</Text>
     </View>
   )
 }

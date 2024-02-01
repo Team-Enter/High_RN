@@ -2,12 +2,12 @@ import { View, Text } from 'react-native'
 import React from 'react'
 
 // 검사 결과 로딩
-const TestResultLodingScreen = () => {
+const TestResultLoadingScreen = () => {
   return (
     <View>
-      <Text>TestResultLodingScreen</Text>
+      <Text>TestResultLoadingScreen</Text>
     </View>
   )
 }
 
-export default TestResultLodingScreen
+export default TestResultLoadingScreen
