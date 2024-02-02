@@ -3,6 +3,7 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import DefaultButton from '../components/DefaultButton'
 import { useNavigation } from '@react-navigation/native'
+import LogoText from '../components/LogoText'
 
 // 시작화면
 const StartScreen = () => {
@@ -22,11 +23,7 @@ const StartScreen = () => {
           source={require('../../assets/images/Logo.jpg')}
           style={[styles.logo, {marginTop: 180}]}
         />
-        <Text
-          style={styles.logoText}
-        >
-          HIGH
-        </Text>
+        <LogoText/>
       </View>
       <View style={{marginTop: 165}}>
         <DefaultButton title="시작하기" onPress={handleJoinPress}/>
@@ -60,13 +57,6 @@ const styles = StyleSheet.create({
   logo: {
     width: 173,
     height: 175,
-  },
-  logoText: {
-    fontFamily: 'Baloo-Regular',
-    fontSize: 60,
-    letterSpacing: 3,
-    color: '#0080F7',
-    fontWeight: 'bold',
   },
   loginTextView: {
     display: 'flex',
