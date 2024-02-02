@@ -30,9 +30,9 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="StartScreen" component={StartScreen} />
+        {/* <Stack.Screen name="StartScreen" component={StartScreen} />
         <Stack.Screen name="JoinEmailIdPasswordScreen" component={JoinEmailIdPasswordScreen} />
-        <Stack.Screen name="JoinNicknameScreen" component={JoinNicknameScreen} />
+        <Stack.Screen name="JoinNicknameScreen" component={JoinNicknameScreen} /> */}
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
         <Stack.Screen name="MainPageScreen" component={MainPageScreen} />
         <Stack.Screen name="TestStartScreen" component={TestStartScreen} />

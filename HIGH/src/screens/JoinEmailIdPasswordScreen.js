@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     height: 14,
   },
   inputButtonSpacing: {
-    height: 230
+    height: 230,
   },
 })
 

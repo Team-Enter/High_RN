@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   },
   nonInputTextField: {
     height: 56,
-  }
+  },
 })
 
 export default JoinNicknameScreen
