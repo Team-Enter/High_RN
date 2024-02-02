@@ -21,11 +21,11 @@ const App = () => {
   const Stack = createNativeStackNavigator();
   const Tab = createBottomTabNavigator();
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     SplashScreen.hide();
-  //   }, 1000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 5000);
+  }, []);
 
   return (
     <NavigationContainer>
