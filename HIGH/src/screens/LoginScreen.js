@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import LogoText from '../components/LogoText'
@@ -6,7 +6,6 @@ import Title from '../components/Title'
 import InputTextField from '../components/InputTextField'
 import DefaultButton from '../components/DefaultButton'
 import { useNavigation } from '@react-navigation/native'
-import MainPageScreen from './MainPageScreen'
 
 // 로그인
 const LoginScreen = () => {
@@ -28,10 +27,9 @@ const LoginScreen = () => {
           <InputTextField placeholder="8~20자 비밀번호를 입력하세요"/>
           <View style={styles.inputSpacing} />
           <View style={styles.nonInputTextField} />
-      </View>
-      <View style={styles.inputButtonSpacing}/>
+          <View style={styles.inputButtonSpacing}/>
+        </View>
       <View style={styles.buttonContainer}>
-        <View/>
         <DefaultButton title="로그인" onPress={handleMainPage}/>
       </View>
     </SafeAreaView>

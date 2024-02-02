@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import LogoText from '../components/LogoText'
@@ -27,10 +27,9 @@ const JoinEmailIdPasswordScreen = () => {
           <InputTextField placeholder="5~15자 아이디를 입력하세요"/>
           <View style={styles.inputSpacing} />
           <InputTextField placeholder="8~20자 비밀번호를 입력하세요"/>
+          <View style={styles.inputButtonSpacing}/>
       </View>
-      <View style={styles.inputButtonSpacing}/>
       <View style={styles.buttonContainer}>
-        <View/>
         <DefaultButton title="다음" onPress={handleNextJoin}/>
       </View>
     </SafeAreaView>

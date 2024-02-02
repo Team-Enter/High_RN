@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import LogoText from '../components/LogoText'
@@ -17,24 +17,23 @@ const JoinNicknameScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-    <View style={styles.logoContent}>
-      <LogoText/>
-      <Title title="#회원가입" />
+      <View style={styles.logoContent}>
+        <LogoText/>
+        <Title title="#회원가입" />
+      </View>
+      <View>
+        <InputTextField placeholder="2~8자 닉네임 입력"/>
+        <View style={styles.inputSpacing} />
+        <View style={styles.nonInputTextField} />
+        <View style={styles.inputSpacing} />
+        <View style={styles.nonInputTextField} />
+        <View style={styles.inputButtonSpacing}/>
     </View>
-    <View>
-      <InputTextField placeholder="2~8자 닉네임 입력"/>
-      <View style={styles.inputSpacing} />
-      <View style={styles.nonInputTextField} />
-      <View style={styles.inputSpacing} />
-      <View style={styles.nonInputTextField} />
-
-  </View>
-  <View style={styles.inputButtonSpacing}/>
-  <View style={styles.buttonContainer}>
-    <View/>
-    <DefaultButton title="회원가입" onPress={handleLogin}/>
-  </View>
-</SafeAreaView>
+    <View style={styles.buttonContainer}>
+      <View/>
+      <DefaultButton title="회원가입" onPress={handleLogin}/>
+    </View>
+  </SafeAreaView>
   )
 }
 
