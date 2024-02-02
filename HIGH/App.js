@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
@@ -15,10 +15,18 @@ import HighschoolDetailsSummaryScreen from "./src/screens/HighschoolDetailsSumma
 import HighschoolDetailsMajorInfoScreen from "./src/screens/HighschoolDetailsMajorInfoScreen";
 import MyPageScreen from "./src/screens/MyPageScreen";
 import TestResultLoadingScreen from "./src/screens/TestResultLoadingScreen";
+import SplashScreen from "react-native-splash-screen";
 
 const App = () => {
   const Stack = createNativeStackNavigator();
   const Tab = createBottomTabNavigator();
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     SplashScreen.hide();
+  //   }, 1000);
+  // }, []);
+
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
