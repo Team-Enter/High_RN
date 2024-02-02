@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import StartScreen from "./src/screens/StartScreen";
 import JoinEmailIdPasswordScreen from "./src/screens/JoinEmailIdPasswordScreen";
-import JoinNicknameScreen from "./src/screens/JoinNickname";
+import JoinNicknameScreen from "./src/screens/JoinNicknameScreen";
 import LoginScreen from "./src/screens/LoginScreen";
 import MainPageScreen from "./src/screens/MainPageScreen";
 import TestStartScreen from "./src/screens/StartTestScreen";
@@ -30,7 +30,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="StartScreen" component={StartScreen} />
+        {/* <Stack.Screen name="StartScreen" component={StartScreen} /> */}
         <Stack.Screen name="JoinEmailIdPasswordScreen" component={JoinEmailIdPasswordScreen} />
         <Stack.Screen name="JoinNicknameScreen" component={JoinNicknameScreen} />
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
