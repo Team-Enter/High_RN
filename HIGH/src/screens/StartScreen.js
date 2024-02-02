@@ -10,11 +10,11 @@ const StartScreen = () => {
 
   const navigation = useNavigation();
   const handleJoinPress = () => {
-    navigation.navigate('JoinEmailIdPasswordScreen'); // JoinEmailIdPasswordScreen으로 네비게이션
+    navigation.navigate('JoinEmailIdPasswordScreen');
   };
   const handleLoginPress = () => {
     navigation.navigate('LoginScreen');
-  }
+  };
   
   return (
     <SafeAreaView style={styles.container}>
