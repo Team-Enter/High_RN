@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import TestNumber from './TestNumber'
+import EmptyView from './EmptyView'
 
 // 테스트 컴포넌트(질문 번호, 질문, 1~7버튼, 전혀 그렇지 않다, 매우 그렇다)
 const Question = ({questionNumber, question}) => {
@@ -25,6 +26,7 @@ const Question = ({questionNumber, question}) => {
         <Text style={styles.answer}>← 전혀 그렇지 않다</Text>
         <Text style={styles.answer}>매우 그렇다 →</Text>
       </View>
+      <EmptyView height={50}/>
     </View>
   )
 }
