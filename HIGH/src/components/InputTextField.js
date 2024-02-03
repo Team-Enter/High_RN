@@ -2,7 +2,7 @@ import { View, TextInput, StyleSheet, Text } from 'react-native'
 import React, { useState } from 'react'
 
 // 입력 텍스트 필드
-const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, focused }) => {
+const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, errorBorderColor }) => {
   const [borderColor, setBorderColor] = useState('#B7B7B7');
 
   const handleFocus = () => {
