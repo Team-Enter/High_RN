@@ -1,6 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import { CommonActions } from '@react-navigation/native'
 
 const Title = ({title}) => {
   return (
