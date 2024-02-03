@@ -22,12 +22,15 @@ const LoginScreen = () => {
           <Title title="#로그인" />
         </View>
         <View>
-          <InputTextField placeholder="5~15자 아이디를 입력하세요"/>
-          <View style={styles.inputSpacing} />
-          <InputTextField placeholder="8~20자 비밀번호를 입력하세요"/>
-          <View style={styles.inputSpacing} />
-          <View style={styles.nonInputTextField} />
-          <View style={styles.inputButtonSpacing}/>
+          <InputTextField
+            label="아이디"
+            placeholder="5~15자 아이디를 입력하세요"
+          />
+          <InputTextField
+            label="비밀번호"
+            placeholder="8~20자 비밀번호를 입력하세요"
+            secureTextEntry={true}
+          />
         </View>
       <View style={styles.buttonContainer}>
         <DefaultButton title="로그인" onPress={handleMainPage}/>
@@ -43,17 +46,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  logoContent: {
-    marginBottom: 40,
+    logoContent: {
+      marginTop: 80,
+      marginBottom: 40,
   },
-  inputSpacing: {
-    height: 14,
-  },
-  inputButtonSpacing: {
-    height: 230,
-  },
-  nonInputTextField: {
-    height: 56,
+  buttonContainer:{
+    marginTop: 'auto',
+    bottom: 40,
   },
 })
 
