@@ -19,10 +19,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     borderRadius: 20,
     borderWidth: 1,
+    marginEnd: 10,
+    marginBottom: 10,
   },
   titleText: {
     fontSize: 14,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   }
 })
 

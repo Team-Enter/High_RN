@@ -41,7 +41,7 @@ const MainPageScreen = () => {
                   <Text style={styles.userNameText}>님</Text>
                 </View>
                 <View style={styles.rowText}>
-                  <Text style={styles.mainText}>궁금한</Text>
+                  <Text style={styles.mainText}>궁금한 </Text>
                   <Text style={styles.highSchoolText}>#고등학교</Text>
                   <Text style={styles.mainText}>의</Text>
                 </View>
