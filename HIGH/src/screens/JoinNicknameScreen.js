@@ -22,15 +22,12 @@ const JoinNicknameScreen = () => {
         <Title title="#회원가입" />
       </View>
       <View>
-        <InputTextField placeholder="2~8자 닉네임 입력"/>
-        <View style={styles.inputSpacing} />
-        <View style={styles.nonInputTextField} />
-        <View style={styles.inputSpacing} />
-        <View style={styles.nonInputTextField} />
-        <View style={styles.inputButtonSpacing}/>
+        <InputTextField 
+          label="닉네임"
+          placeholder="2~8자 닉네임 입력"
+        />
     </View>
     <View style={styles.buttonContainer}>
-      <View/>
       <DefaultButton title="회원가입" onPress={handleLogin}/>
     </View>
   </SafeAreaView>
@@ -44,17 +41,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  logoContent: {
-    marginBottom: 40,
+    logoContent: {
+      marginTop: 80,
+      marginBottom: 40,
   },
-  inputSpacing: {
-    height: 14,
-  },
-  inputButtonSpacing: {
-    height: 230,
-  },
-  nonInputTextField: {
-    height: 56,
+  buttonContainer:{
+    marginTop: 'auto',
+    bottom: 40
   },
 })
 
