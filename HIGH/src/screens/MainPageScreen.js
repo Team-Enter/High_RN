@@ -14,6 +14,9 @@ const MainPageScreen = () => {
   const handleMyPagePress = () => {
     navigation.navigate('MyPageScreen');
   };
+  const handleSchoolInfoPress = () => {
+    navigation.navigate('HighschoolDetailsScreen');
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -67,17 +70,53 @@ const MainPageScreen = () => {
         <View style={styles.containerDown}>
           <Text style={styles.listText}>🔥 고등학교 추천을 이렇게!</Text>
           <ScrollView style={styles.scrollView}>
-            <HighschoolList/>
+            <TouchableOpacity
+              onPress={handleSchoolInfoPress}
+            >
+              <HighschoolList/>
+            </TouchableOpacity>
             <View style={styles.spacing}/>
-            <HighschoolList/>
+
+            <TouchableOpacity
+              onPress={handleSchoolInfoPress}
+            >
+              <HighschoolList/>
+            </TouchableOpacity>
             <View style={styles.spacing}/>
-            <HighschoolList/>
+
+            <TouchableOpacity
+              onPress={handleSchoolInfoPress}
+            >
+              <HighschoolList/>
+            </TouchableOpacity>
             <View style={styles.spacing}/>
-            <HighschoolList/>
+
+            <TouchableOpacity
+              onPress={handleSchoolInfoPress}
+            >
+              <HighschoolList/>
+            </TouchableOpacity>
             <View style={styles.spacing}/>
-            <HighschoolList/>
+
+            <TouchableOpacity
+              onPress={handleSchoolInfoPress}
+            >
+              <HighschoolList/>
+            </TouchableOpacity>
             <View style={styles.spacing}/>
-            <HighschoolList/>
+
+            <TouchableOpacity
+              onPress={handleSchoolInfoPress}
+            >
+              <HighschoolList/>
+            </TouchableOpacity>
+            <View style={styles.spacing}/>
+
+            <TouchableOpacity
+              onPress={handleSchoolInfoPress}
+            >
+              <HighschoolList/>
+            </TouchableOpacity>
             <View style={styles.spacing}/>
           </ScrollView>
         </View>
