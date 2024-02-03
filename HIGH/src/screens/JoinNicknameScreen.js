@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer:{
     marginTop: 'auto',
-    bottom: 40
+    bottom: 40,
   },
 })
 

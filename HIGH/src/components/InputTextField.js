@@ -1,9 +1,11 @@
-import { View, TextInput, StyleSheet, Text } from 'react-native'
-import React, { useState } from 'react'
+// InputTextField 컴포넌트에서 눈 모양 토글 추가하기
+import { View, TextInput, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
+import React, { useState } from 'react';
 
 // 입력 텍스트 필드
-const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, errorBorderColor }) => {
+const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, errorBorderColor, secureTextEntry }) => {
   const [borderColor, setBorderColor] = useState('#B7B7B7');
+  const [showPassword, setShowPassword] = useState(false); // 비밀번호 보이기 상태 추가
 
   const handleFocus = () => {
     onFocus && onFocus();
@@ -25,7 +27,15 @@ const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, err
           placeholderTextColor="#D0D0D0"
           onFocus={handleFocus}
           onBlur={handleBlur}
+          secureTextEntry={secureTextEntry && !showPassword}
         />
+        {secureTextEntry && (
+          <TouchableOpacity onPress={() => setShowPassword(!showPassword)} style={styles.eyeIcon}>
+            <Image style={styles.eyeIcon}
+              source={showPassword ? require('../../assets/images/Eye.jpg') : require('../../assets/images/LineEye.jpg')}
+            />
+          </TouchableOpacity>
+        )}
       </View>
       {errorMessage ? (
         <Text style={styles.errorMessage}>{errorMessage}</Text>
@@ -71,6 +81,10 @@ const styles = StyleSheet.create({
     color: '#F04621',
     textAlign: 'left',
   },
-})
+  eyeIcon: {
+    width: 23,
+    height: 20,
+  },
+});
 
-export default InputTextField
+export default InputTextField;
