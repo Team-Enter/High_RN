@@ -1,16 +1,32 @@
 import { View, TextInput, StyleSheet, Text } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 
 // 입력 텍스트 필드
-const InputTextField = ({placeholder, label, errorMessage}) => {
+const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, focused }) => {
+  const [borderColor, setBorderColor] = useState('#B7B7B7');
+
+  const handleFocus = () => {
+    onFocus && onFocus();
+    setBorderColor('#0080F7');
+  }
+
+  const handleBlur = () => {
+    onBlur && onBlur();
+    setBorderColor('#B7B7B7');
+  }
+
   return (
-    <View style={styles.inputContainer}>
+    <View>
       <Text style={styles.label}>{label}</Text>
-      <TextInput
-        style={styles.input}
-        placeholder={placeholder}
-        placeholderTextColor="#D0D0D0"
-      />
+      <View style={[styles.inputContainer, { borderColor: borderColor }]}>
+        <TextInput
+          style={styles.input}
+          placeholder={placeholder}
+          placeholderTextColor="#D0D0D0"
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+        />
+      </View>
       {errorMessage ? (
         <Text style={styles.errorMessage}>{errorMessage}</Text>
       ) : null}
@@ -21,17 +37,16 @@ const InputTextField = ({placeholder, label, errorMessage}) => {
 const styles = StyleSheet.create({
   inputContainer: {
     width: 325,
+    height: 48,
     borderWidth: 1,
-    borderColor: '#B7B7B7',
-    borderRadius: 10,
+    borderRadius: 5,
     backgroundColor: '#FFF',
-    paddingVertical: 17,
     paddingHorizontal: 15,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
+    marginRight: 10, // gap 대신 marginRight 사용
   },
-  label:{
+  label: {
     fontFamily: 'Roboto-Medium',
     fontSize: 14,
     lineHeight: 24,
@@ -47,8 +62,9 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     lineHeight: 22,
     letterSpacing: -0.408,
+    placeholderTextColor: '#D9D9D9'
   },
-  errorMessage:{
+  errorMessage: {
     fontFamily: 'Roboto-Medium',
     fontSize: 13,
     lineHeight: 24,
