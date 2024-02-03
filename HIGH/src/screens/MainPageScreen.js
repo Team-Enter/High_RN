@@ -1,7 +1,8 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useNavigation } from '@react-navigation/native';
+import HighschoolList from '../components/HighschoolList';
 
 // 메인페이지
 const MainPageScreen = () => {
@@ -63,6 +64,24 @@ const MainPageScreen = () => {
           source={require('../../assets/images/Banner.jpg')}
           style={styles.bannerImage}
         />
+        <View style={styles.containerDown}>
+          <Text style={styles.listText}>🔥 고등학교 추천을 이렇게!</Text>
+          <ScrollView style={styles.scrollView}>
+            <HighschoolList/>
+            <View style={styles.spacing}/>
+            <HighschoolList/>
+            <View style={styles.spacing}/>
+            <HighschoolList/>
+            <View style={styles.spacing}/>
+            <HighschoolList/>
+            <View style={styles.spacing}/>
+            <HighschoolList/>
+            <View style={styles.spacing}/>
+            <HighschoolList/>
+            <View style={styles.spacing}/>
+          </ScrollView>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   )
 }
@@ -72,14 +91,20 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
   },
+  containerUp: {
+    paddingHorizontal: 20,
+  },
+  containerDown: {
+    paddingHorizontal: 20,
+  },
   topBar: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 25,
-    height: 50,
+    height: 30,
     backgroundColor: '#fff',
     marginBottom: 15,
+    paddingHorizontal: 20,
   },
   logoText: {
     fontFamily: 'Baloo-Regular',
@@ -188,6 +213,18 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 95,
     marginBottom: 20,
+  },
+  listText:{
+    color: '#000',
+    fontFamily: 'Inter-Regular',
+    fontSize: 20,
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: 22,
+    marginBottom: 16
+  },
+  spacing: {
+    height: 10,
   },
 })
 
