@@ -27,36 +27,39 @@ const MainPageScreen = () => {
           />
         </TouchableOpacity>
       </View>
-      <View style={styles.mainContainer}>
-        <View style={styles.mainContext}>
-          <View style={styles.mainTextContainer}>
-            <View style={styles.rowText}>
-              <Text style={styles.userNameText}>푕힁영</Text>
-              <Text style={styles.userNameText}>님</Text>
+      <ScrollView>
+        <View style={styles.containerUp}>
+          <View style={styles.mainContainer}>
+            <View style={styles.mainContext}>
+              <View style={styles.mainTextContainer}>
+                <View style={styles.rowText}>
+                  <Text style={styles.userNameText}>푕힁영</Text>
+                  <Text style={styles.userNameText}>님</Text>
+                </View>
+                <View style={styles.rowText}>
+                  <Text style={styles.mainText}>궁금한</Text>
+                  <Text style={styles.highSchoolText}>#고등학교</Text>
+                  <Text style={styles.mainText}>의</Text>
+                </View>
+                <Text style={styles.mainText}>정보를 미리 확인하세요</Text>
+                <Text style={styles.mainSmallText}>고등학교 선택 전, 다양한 학교 정보 확인</Text>
+              </View>
             </View>
-            <View style={styles.rowText}>
-              <Text style={styles.mainText}>궁금한</Text>
-              <Text style={styles.highSchoolText}>#고등학교</Text>
-              <Text style={styles.mainText}>의</Text>
-            </View>
-            <Text style={styles.mainText}>정보를 미리 확인하세요</Text>
-            <Text style={styles.mainSmallText}>고등학교 선택 전, 다양한 학교 정보 확인</Text>
+            <Image
+              source={require('../../assets/images/MainImage.jpg')}
+              style={styles.mainImage}
+            />
           </View>
+          <TouchableOpacity
+            onPress={handleTestPress}
+          >
+            <View style={styles.testContainer}>
+              <Text style={styles.goTestText}>나의 적성검사 하러가기 →</Text>
+              <Text style={styles.checkTest}>고등학교를 확인하기 전 나에게 맞는 적성을 확인하세요</Text>
+            </View>
+          </TouchableOpacity>
         </View>
         <Image
-          source={require('../../assets/images/MainImage.jpg')}
-          style={styles.mainImage}
-        />
-      </View>
-      <TouchableOpacity
-        onPress={handleTestPress}
-      >
-        <View style={styles.testContainer}>
-          <Text style={styles.goTestText}>나의 적성검사 하러가기 →</Text>
-          <Text style={styles.checkTest}>고등학교를 확인하기 전 나에게 맞는 적성을 확인하세요</Text>
-        </View>
-      </TouchableOpacity>
-      <Image
           source={require('../../assets/images/Banner.jpg')}
           style={styles.bannerImage}
         />
@@ -94,7 +97,6 @@ const styles = StyleSheet.create({
     height: 127,
     position: 'absolute', // 이미지를 고정
     right: 0, // 왼쪽에 고정
-    marginEnd: 15,
   },
   mainContainer:{
     flexDirection: 'row',
@@ -110,7 +112,6 @@ const styles = StyleSheet.create({
   },
   mainTextContainer: {
     zIndex: 1,
-    marginLeft: 25, // 텍스트를 오른쪽으로 20만큼 이동
   },
   rowText:{
     flexDirection: 'row',
@@ -163,7 +164,6 @@ const styles = StyleSheet.create({
     flexShrink: 0,
     borderRadius: 10,
     backgroundColor: '#E8F4FF',
-    marginHorizontal: 20,
     marginBottom: 20,
   },
   goTestText:{ 
