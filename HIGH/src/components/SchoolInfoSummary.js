@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import EndLine from './EndLine'
 
-const SchoolInfoSummary = ({buildDate, buildType, number, place, link}) => {
+const SchoolInfoSummary = ({buildDate, buildType, schoolType, number, place, link}) => {
   return (
     <View>
         <View style={styles.container}>
@@ -14,6 +14,10 @@ const SchoolInfoSummary = ({buildDate, buildType, number, place, link}) => {
             <View style={styles.textLine}>
                 <Text style={styles.contentTitle}>설립 유형</Text>
                 <Text style={styles.contentInfo}>{buildType}</Text>
+            </View>
+            <View style={styles.textLine}>
+                <Text style={styles.contentTitle}>구분</Text>
+                <Text style={styles.contentInfo}>{schoolType}</Text>
             </View>
             <View style={styles.textLine}>
                 <Text style={styles.contentTitle}>전화번호</Text>
