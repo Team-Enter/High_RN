@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: '#D9D9D9',
     fontFamily: 'Inter-Regular',
-    fontWeight: '500',
+    fontWeight: '700',
     fontSize: 15,
   },
   titleCell: {
