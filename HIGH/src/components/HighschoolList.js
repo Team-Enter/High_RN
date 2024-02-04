@@ -1,5 +1,6 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
+import EmptyView from './EmptyView'
 
 const HighschoolList = ({schoolType, schoolName, schoolPlace}) => {
   return (
@@ -23,6 +24,7 @@ const HighschoolList = ({schoolType, schoolName, schoolPlace}) => {
                 </View> 
             </View>
         </View>
+        <EmptyView height={10}/>
     </View>
   )
 }
