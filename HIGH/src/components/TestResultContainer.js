@@ -7,14 +7,11 @@ const TestResultContainer = ({name, ability1, ability2}) => {
     <View style={styles.container}>
       <View style={styles.textContainer}>
         <View style={styles.textLine}>
-            <Text style={styles.textBoldBlack}>{name}푕힁영 </Text>
+            <Text style={styles.textBoldBlack}>{name} </Text>
             <Text style={styles.textBoldBlack}>님</Text>
             <Text style={styles.textDefaultBlack}>의</Text>
         </View>
-        <View style={styles.textLine}>
-            <Text style={styles.textDefaultBlue}>#적성검사_결과</Text>
-            <Text style={styles.textDefaultBlack}>로</Text>
-        </View>
+        <Text style={styles.textDefaultBlue}>#적성검사_결과</Text>
         <Text style={styles.textDefaultBlack}>가장 높은 능력 2가지</Text>
       </View>
       <View>
