@@ -15,7 +15,7 @@ const MainPageScreen = () => {
     navigation.navigate('MyPageScreen');
   };
   const handleSchoolInfoPress = () => {
-    navigation.navigate('HighschoolDetailsScreen');
+    navigation.navigate('HighschoolDetailsSummaryScreen');
   };
 
   return (
@@ -79,7 +79,6 @@ const MainPageScreen = () => {
                 schoolPlace="대전광역시 유성구"
               />
             </TouchableOpacity>
-            <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
@@ -90,7 +89,6 @@ const MainPageScreen = () => {
                 schoolPlace="대전광역시 유성구"
               />
             </TouchableOpacity>
-            <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
@@ -101,7 +99,6 @@ const MainPageScreen = () => {
                 schoolPlace="대전광역시 유성구"
               />
             </TouchableOpacity>
-            <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
@@ -112,7 +109,6 @@ const MainPageScreen = () => {
                 schoolPlace="대전광역시 유성구"
               />
             </TouchableOpacity>
-            <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
@@ -123,7 +119,6 @@ const MainPageScreen = () => {
                 schoolPlace="대전광역시 유성구"
               />
             </TouchableOpacity>
-            <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
@@ -134,7 +129,6 @@ const MainPageScreen = () => {
                 schoolPlace="대전광역시 유성구"
               />
             </TouchableOpacity>
-            <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
@@ -145,7 +139,6 @@ const MainPageScreen = () => {
                 schoolPlace="대전광역시 유성구"
               />
             </TouchableOpacity>
-            <View style={styles.spacing}/>
           </ScrollView>
         </View>
       </ScrollView>
@@ -289,9 +282,6 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     lineHeight: 22,
     marginBottom: 16
-  },
-  spacing: {
-    height: 10,
   },
 })
 
