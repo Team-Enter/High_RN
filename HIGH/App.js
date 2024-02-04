@@ -11,8 +11,7 @@ import TestStartScreen from "./src/screens/TestStartScreen";
 import TestQuestionScreen from "./src/screens/TestQuestionScreen";
 import TestResultScreen from "./src/screens/TestResultScreen";
 import TestResultHighschoolScreen from "./src/screens/TestResultHighschoolScreen";
-import HighschoolDetailsSummaryScreen from "./src/screens/HighschoolDetailsSummaryScreen";
-import HighschoolDetailsMajorInfoScreen from "./src/screens/HighschoolDetailsMajorInfoScreen";
+import HighschoolDetailsSummaryScreen from "./src/screens/HighschoolDetailScreen";
 import MyPageScreen from "./src/screens/MyPageScreen";
 import TestResultLoadingScreen from "./src/screens/TestResultLoadingScreen";
 import SplashScreen from "react-native-splash-screen";
@@ -34,14 +33,13 @@ const App = () => {
         <Stack.Screen name="JoinEmailIdPasswordScreen" component={JoinEmailIdPasswordScreen} />
         <Stack.Screen name="JoinNicknameScreen" component={JoinNicknameScreen}/>
         <Stack.Screen name="LoginScreen" component={LoginScreen} /> */}
-        {/* <Stack.Screen name="MainPageScreen" component={MainPageScreen} />  */}
-        {/* <Stack.Screen name="TestStartScreen" component={TestStartScreen} /> 
+        {/* <Stack.Screen name="MainPageScreen" component={MainPageScreen} /> 
+        <Stack.Screen name="TestStartScreen" component={TestStartScreen} /> 
         <Stack.Screen name="TestQuestionScreen" component={TestQuestionScreen} />
         <Stack.Screen name="TestResultLoadingScreen" component={TestResultLoadingScreen} /> */}
         <Stack.Screen name="TestResultScreen" component={TestResultScreen} />
         <Stack.Screen name="TestResultHighschoolScreen" component={TestResultHighschoolScreen} />
         <Stack.Screen name="HighschoolDetailsSummaryScreen" component={HighschoolDetailsSummaryScreen} />
-        <Stack.Screen name="HighschoolDetailsMajorInfoScreen" component={HighschoolDetailsMajorInfoScreen} />
         <Stack.Screen name="MyPageScreen" component={MyPageScreen} />
       </Stack.Navigator>
     </NavigationContainer>
