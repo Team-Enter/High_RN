@@ -1,7 +1,7 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
 
-const HighschoolList = () => {
+const HighschoolList = ({schoolType, schoolName, schoolPlace}) => {
   return (
     <View>
         <View style={styles.schoolListContainer}>
@@ -12,14 +12,14 @@ const HighschoolList = () => {
                     />
             </View>
             <View>
-                <Text style={styles.schoolType}>특목고</Text>
-                <Text style={styles.schoolName}>대덕소프트웨어마이스터고등학교</Text>
+                <Text style={styles.schoolType}>{schoolType}</Text>
+                <Text style={styles.schoolName}>{schoolName}</Text>
                 <View style={styles.placeContainer}>
                     <Image
                         source={require('../../assets/images/PlaceIcon.jpg')}
                         style={styles.placeIcon}
                     />
-                    <Text style={styles.schoolPlace}>대전광역시 유성구</Text>
+                    <Text style={styles.schoolPlace}>{schoolPlace}</Text>
                 </View> 
             </View>
         </View>

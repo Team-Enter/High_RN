@@ -73,49 +73,77 @@ const MainPageScreen = () => {
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
             >
-              <HighschoolList/>
+              <HighschoolList
+                schoolType="특목고"
+                schoolName="대덕소프트웨어마이스터고등학교"
+                schoolPlace="대전광역시 유성구"
+              />
             </TouchableOpacity>
             <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
             >
-              <HighschoolList/>
+              <HighschoolList
+                schoolType="특목고"
+                schoolName="대덕소프트웨어마이스터고등학교"
+                schoolPlace="대전광역시 유성구"
+              />
             </TouchableOpacity>
             <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
             >
-              <HighschoolList/>
+              <HighschoolList
+                schoolType="특목고"
+                schoolName="대덕소프트웨어마이스터고등학교"
+                schoolPlace="대전광역시 유성구"
+              />
             </TouchableOpacity>
             <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
             >
-              <HighschoolList/>
+              <HighschoolList
+                schoolType="특목고"
+                schoolName="대덕소프트웨어마이스터고등학교"
+                schoolPlace="대전광역시 유성구"
+              />
             </TouchableOpacity>
             <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
             >
-              <HighschoolList/>
+              <HighschoolList
+                schoolType="특목고"
+                schoolName="대덕소프트웨어마이스터고등학교"
+                schoolPlace="대전광역시 유성구"
+              />
             </TouchableOpacity>
             <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
             >
-              <HighschoolList/>
+              <HighschoolList
+                schoolType="특목고"
+                schoolName="대덕소프트웨어마이스터고등학교"
+                schoolPlace="대전광역시 유성구"
+              />
             </TouchableOpacity>
             <View style={styles.spacing}/>
 
             <TouchableOpacity
               onPress={handleSchoolInfoPress}
             >
-              <HighschoolList/>
+              <HighschoolList
+                schoolType="특목고"
+                schoolName="대덕소프트웨어마이스터고등학교"
+                schoolPlace="대전광역시 유성구"
+              />
             </TouchableOpacity>
             <View style={styles.spacing}/>
           </ScrollView>
