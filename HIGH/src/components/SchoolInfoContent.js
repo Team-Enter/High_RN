@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-const SchoolInfoContent = () => {
+const SchoolInfoContent = ({ setSummaryVisible, setMajorVisible }) => {
   const [isFirstSelected, setIsFirstSelected] = useState(false);
   const [isSecondSelected, setIsSecondSelected] = useState(false);
 
   const handleFirstPress = () => {
     setIsFirstSelected(true);
     setIsSecondSelected(false);
+    setSummaryVisible(true);
+    setMajorVisible(false);
   };
 
   const handleSecondPress = () => {
     setIsFirstSelected(false);
     setIsSecondSelected(true);
+    setSummaryVisible(false);
+    setMajorVisible(true);
   };
 
   return (
