@@ -46,28 +46,8 @@ const TestStartScreen = () => {
       <View style={styles.testInfoContainer}>
         <View style={styles.testInfoText}>
           <Text 
-            style={{
-              color: '#000',
-              fontFamily: 'Inter-Regular',
-              fontSize: 28,
-              fontStyle: 'normal',
-              fontWeight: 'bold',
-              lineHeight: 30,
-              letterSpacing: -0.41,
-              textAlign: 'left'
-            }}>🧐 해당 적성검사</Text>
-          <Text
-            style={{
-              color: '#000',
-              fontFamily: 'Inter-Regular',
-              fontSize: 21,
-              fontStyle: 'normal',
-              fontWeight: 'bold',
-              lineHeight: 30,
-              letterSpacing: -0.41,
-              textAlign: 'left',
-            }}
-          >는</Text>
+            style={styles.testInfoBold}>🧐 해당 적성검사</Text>
+          <Text style={styles.testInfoDefaultFirst}>는</Text>
         </View>
         <View>
           <Text style={styles.testInfoDefault}>아래 키워드를 기반으로</Text>
@@ -75,16 +55,7 @@ const TestStartScreen = () => {
         <View style={styles.testInfoText}>
           <Text style={styles.testInfoBlue}>#다양한_능력</Text>
           <Text
-            style={{
-              color: '#000',
-              fontFamily: 'Inter-Regular',
-              fontSize: 21,
-              fontStyle: 'normal',
-              fontWeight: 'bold',
-              lineHeight: 40,
-              letterSpacing: -0.41,
-              textAlign: 'left',
-            }}
+            style={styles.testInfoDefaultThird}
           > 중</Text>
         </View>
         <View>
@@ -208,7 +179,7 @@ const styles = StyleSheet.create({
     height: 30,
     backgroundColor: 'white',
     justifyContent: 'center',
-    alignItems: 'flex-end'
+    alignItems: 'flex-end',
   },
   testInfoContainer:{
     marginTop: 30,
@@ -251,12 +222,42 @@ const styles = StyleSheet.create({
   startTestText:{
     fontFamily: 'Inter-Regular',
     fontSize: 15,
-    color: '#A1A1A1'
+    color: '#A1A1A1',
   },
   buttonContainer:{
     marginTop: 'auto',
     bottom: 40,
     marginStart: 30,
+  },
+  testInfoBold:{
+    color: '#000',
+    fontFamily: 'Inter-Regular',
+    fontSize: 28,
+    fontStyle: 'normal',
+    fontWeight: 'bold',
+    lineHeight: 30,
+    letterSpacing: -0.41,
+    textAlign: 'left',
+  },
+  testInfoDefaultFirst:{
+    color: '#000',
+    fontFamily: 'Inter-Regular',
+    fontSize: 21,
+    fontStyle: 'normal',
+    fontWeight: 'bold',
+    lineHeight: 30,
+    letterSpacing: -0.41,
+    textAlign: 'left',
+  },
+  testInfoDefaultThird: {
+    color: '#000',
+    fontFamily: 'Inter-Regular',
+    fontSize: 21,
+    fontStyle: 'normal',
+    fontWeight: 'bold',
+    lineHeight: 40,
+    letterSpacing: -0.41,
+    textAlign: 'left',
   },
 })
 
