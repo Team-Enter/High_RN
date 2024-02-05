@@ -1,6 +1,7 @@
 // InputTextField 컴포넌트에서 눈 모양 토글 추가하기
 import { View, TextInput, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
 import React, { useState } from 'react';
+import EmptyView from './EmptyView';
 
 // 입력 텍스트 필드
 const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, errorBorderColor, secureTextEntry }) => {
@@ -40,6 +41,7 @@ const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, err
       {errorMessage ? (
         <Text style={styles.errorMessage}>{errorMessage}</Text>
       ) : null}
+      <EmptyView height={7}/>
     </View>
   )
 }
