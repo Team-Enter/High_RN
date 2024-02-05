@@ -6,7 +6,9 @@ import PeopleInfo from '../components/PeopleInfo';
 import MyPageButton from '../components/MyPageButton';
 import ModalLogOut from '../components/ModalLogOut';
 import ModalBug from '../components/ModalBug';
+import TopBarTitle from '../components/TopBarTitle';
 
+// 마이페이지
 const MyPageScreen = () => {
   const navigation = useNavigation();
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState(false);
@@ -37,7 +39,7 @@ const MyPageScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topBar}>
-        <Text style={styles.logoText}>MY</Text>
+        <TopBarTitle title="MY"/>
         <TouchableOpacity onPress={handleMainPagePress}>
           <Image
             source={require('../../assets/images/XIcon.jpg')}
@@ -90,13 +92,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     marginBottom: 15,
     paddingHorizontal: 20,
-  },
-  logoText: {
-    fontFamily: 'Baloo-Regular',
-    fontSize: 32,
-    letterSpacing: 3,
-    color: '#0080F7',
-    fontWeight: 'bold',
   },
   userIcon: {
     width: 20,

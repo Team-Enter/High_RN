@@ -3,6 +3,7 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useNavigation } from '@react-navigation/native';
 import HighschoolList from '../components/HighschoolList';
+import TopBarTitle from '../components/TopBarTitle';
 
 // 메인페이지
 const MainPageScreen = () => {
@@ -21,7 +22,7 @@ const MainPageScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topBar}>
-        <Text style={styles.logoText}>HIGH</Text>
+        <TopBarTitle title="HIGH"/>
         <TouchableOpacity
           onPress={handleMyPagePress}
         >
@@ -166,13 +167,6 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     paddingHorizontal: 20,
   },
-  logoText: {
-    fontFamily: 'Baloo-Regular',
-    fontSize: 32,
-    letterSpacing: 3,
-    color: '#0080F7',
-    fontWeight: 'bold',
-  },
   userIcon: {
     width: 24,
     height: 24,
@@ -180,8 +174,8 @@ const styles = StyleSheet.create({
   mainImage: {
     width: 155,
     height: 127,
-    position: 'absolute', // 이미지를 고정
-    right: 0, // 왼쪽에 고정
+    position: 'absolute',
+    right: 0,
   },
   mainContainer:{
     flexDirection: 'row',
@@ -192,7 +186,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     flexDirection: 'row',
     alignItems: 'center',
-    position: 'relative', // 부모 컨테이너 기준으로 위치 지정
+    position: 'relative',
     zIndex: 1,
   },
   mainTextContainer: {
