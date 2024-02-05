@@ -16,7 +16,7 @@ const TestResultHighschoolScreen = () => {
     navigation.navigate('MyPageScreen');
   };
   const handleSchoolInfoPress = () => {
-    navigation.navigate('HighschoolDetailsSummaryScreen');
+    navigation.navigate('HighschoolDetailScreen');
   };
 
 
