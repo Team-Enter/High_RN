@@ -7,7 +7,6 @@ import Title from '../components/Title';
 import InputTextField from '../components/InputTextField';
 import DefaultButton from '../components/DefaultButton';
 import { useNavigation } from '@react-navigation/native';
-import Feather from 'react-native-vector-icons/Feather';
 
 // 회원가입_이메일, 아이디, 비밀번호
 const JoinEmailIdPasswordScreen = () => {
@@ -24,17 +23,17 @@ const JoinEmailIdPasswordScreen = () => {
         <Title title="#회원가입" />
       </View>
       <View>
-        <InputTextField 
+        <InputTextField
           label="이메일"
           placeholder="이메일를 입력하세요"
         />
 
-        <InputTextField 
+        <InputTextField
           label="아이디"
           placeholder="5~15자 아이디를 입력하세요"
         />
 
-        <InputTextField 
+        <InputTextField
           label="비밀번호"
           placeholder="8~20자 비밀번호를 입력하세요"
           secureTextEntry={true}
@@ -45,7 +44,7 @@ const JoinEmailIdPasswordScreen = () => {
       </View>
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -60,8 +59,8 @@ const styles = StyleSheet.create({
   },
   buttonContainer:{
     marginTop: 'auto',
-    bottom: 40
+    bottom: 40,
   },
 });
 
-export default JoinEmailIdPasswordScreen;
+export default JoinEmailIdPasswordScreen

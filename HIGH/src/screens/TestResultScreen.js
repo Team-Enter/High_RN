@@ -45,7 +45,7 @@ const TestResultScreen = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.centerContainer}>
-        <TestResultContainer 
+        <TestResultContainer
           name="푕힁영"
           ability1="능력1"
           ability2="능력2"
@@ -57,8 +57,8 @@ const TestResultScreen = () => {
         <SpeechBubble/>
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

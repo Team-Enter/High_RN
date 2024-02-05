@@ -36,8 +36,8 @@ const LoginScreen = () => {
         <DefaultButton title="로그인" onPress={handleMainPage}/>
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

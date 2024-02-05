@@ -11,14 +11,13 @@ import TestStartScreen from "./src/screens/TestStartScreen";
 import TestQuestionScreen from "./src/screens/TestQuestionScreen";
 import TestResultScreen from "./src/screens/TestResultScreen";
 import TestResultHighschoolScreen from "./src/screens/TestResultHighschoolScreen";
-import HighschoolDetailsSummaryScreen from "./src/screens/HighschoolDetailScreen";
+import HighschoolDetailScreen from "./src/screens/HighschoolDetailScreen";
 import MyPageScreen from "./src/screens/MyPageScreen";
 import TestResultLoadingScreen from "./src/screens/TestResultLoadingScreen";
 import SplashScreen from "react-native-splash-screen";
 
 const App = () => {
   const Stack = createNativeStackNavigator();
-  const Tab = createBottomTabNavigator();
 
   useEffect(() => {
     setTimeout(() => {
@@ -39,7 +38,7 @@ const App = () => {
         <Stack.Screen name="TestResultLoadingScreen" component={TestResultLoadingScreen} />
         <Stack.Screen name="TestResultScreen" component={TestResultScreen} />
         <Stack.Screen name="TestResultHighschoolScreen" component={TestResultHighschoolScreen} />
-        <Stack.Screen name="HighschoolDetailsSummaryScreen" component={HighschoolDetailsSummaryScreen} />
+        <Stack.Screen name="HighschoolDetailScreen" component={HighschoolDetailScreen} />
         <Stack.Screen name="MyPageScreen" component={MyPageScreen} />
       </Stack.Navigator>
     </NavigationContainer>
