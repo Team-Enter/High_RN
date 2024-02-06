@@ -17,6 +17,15 @@ const TestQuestionScreen = () => {
   const handleMyPagePress = () => {
     navigation.navigate('MyPageScreen');
   };
+  const handleNextQuestionPagePress = () => {
+    navigation.navigate({/* TODO */});
+  };
+  const handleBackQuestionPagePress = () => {
+    navigation.navigate({/* TODO */});
+  };
+  const handleLastQuestionPagePress = () => {
+    navigation.navigate('TestResultLoadingScreen');
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -60,7 +69,7 @@ const TestQuestionScreen = () => {
         <View style={styles.buttonContainer}>
           <BackButton/>
           <EmptyView width={6}/>
-          <NextButton/>
+          <NextButton onPress={handleLastQuestionPagePress}/>
         </View>
       </ScrollView>
     </SafeAreaView>
