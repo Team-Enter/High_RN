@@ -1,21 +1,15 @@
 import { View, Text, TouchableOpacity, StyleSheet} from 'react-native'
 import React, { useState } from 'react'
 
-const TestNumber = ({number}) => {
-
-    const  [isClicked, setIsClicked] = useState(false);
-    const handlePress = () => {
-        setIsClicked(!isClicked);
-      };
-
+const TestNumber = ({ number, onPress, selected }) => {
   return (
-    <TouchableOpacity onPress={handlePress}>
-        <View style={[styles.numberContainer, isClicked && styles.clickNumberContainer]}>
-        <Text style={[styles.numberText, isClicked && styles.clickNumberText]}>{number}</Text>
+    <TouchableOpacity onPress={onPress}>
+      <View style={[styles.numberContainer, selected && styles.clickNumberContainer]}>
+        <Text style={[styles.numberText, selected && styles.clickNumberText]}>{number}</Text>
       </View>
     </TouchableOpacity>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
     numberContainer:{
