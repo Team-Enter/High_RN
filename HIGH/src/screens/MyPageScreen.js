@@ -39,7 +39,11 @@ const MyPageScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topBar}>
-        <TopBarTitle title="MY"/>
+        {/* <TopBarTitle title="MY"/> 상단바 로고 */}
+        <Image
+          source={require('../../assets/images/Logo_MY.jpg')}
+          style={styles.logoTextImage}
+        />
         <TouchableOpacity onPress={handleMainPagePress}>
           <Image
             source={require('../../assets/images/XIcon.jpg')}
@@ -96,6 +100,11 @@ const styles = StyleSheet.create({
   userIcon: {
     width: 20,
     height: 20,
+  },
+  logoTextImage: {
+    width: 53,
+    height: 22,
+    marginTop: 15,
   },
   content: {
     paddingHorizontal: 20,

@@ -22,7 +22,11 @@ const MainPageScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topBar}>
-        <TopBarTitle title="HIGH"/>
+        {/* <TopBarTitle title="HIGH"/> 상단바 로고 */}
+        <Image
+          source={require('../../assets/images/Logo_HIGH.jpg')}
+          style={styles.logoTextImage}
+        />
         <TouchableOpacity
           onPress={handleMyPagePress}
         >
@@ -176,6 +180,11 @@ const styles = StyleSheet.create({
     height: 127,
     position: 'absolute',
     right: 0,
+  },
+  logoTextImage: {
+    width: 79,
+    height: 22,
+    marginTop: 15,
   },
   mainContainer:{
     flexDirection: 'row',

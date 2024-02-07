@@ -21,9 +21,13 @@ const StartScreen = () => {
       <View style={styles.content}>
         <Image 
           source={require('../../assets/images/Logo.jpg')}
-          style={[styles.logo, {marginTop: 180}]}
+          style={[styles.logoImage, {marginTop: 180}]}
         />
-        <LogoText/>
+        {/* <LogoText/> 로고 텍스트 */}
+        <Image 
+          source={require('../../assets/images/Logo_HIGH.jpg')}
+          style={styles.logoTextImage}
+        />
       </View>
       <View style={{marginTop: 165}}>
         <DefaultButton title="시작하기" onPress={handleJoinPress}/>
@@ -54,9 +58,14 @@ const styles = StyleSheet.create({
   content: {
     alignItems: 'center',
   },
-  logo: {
+  logoImage: {
     width: 173,
     height: 175,
+  },
+  logoTextImage: {
+    width: 150,
+    height: 42,
+    marginTop: 25,
   },
   loginTextView: {
     display: 'flex',

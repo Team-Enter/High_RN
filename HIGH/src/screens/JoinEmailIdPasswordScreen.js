@@ -1,5 +1,5 @@
 // JoinEmailIdPasswordScreen 스크린에서 비밀번호 입력란에 secureTextEntry prop을 추가하여 수정합니다.
-import { View, StyleSheet} from 'react-native';
+import { View, StyleSheet, Image} from 'react-native';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import LogoText from '../components/LogoText';
@@ -19,7 +19,11 @@ const JoinEmailIdPasswordScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.logoContent}>
-        <LogoText/>
+        {/* <LogoText/> 로고 텍스트 */}
+        <Image
+          source={require('../../assets/images/Logo_HIGH.jpg')}
+          style={styles.logoTextImage}
+        />
         <Title title="#회원가입" />
       </View>
       <View>
@@ -56,6 +60,11 @@ const styles = StyleSheet.create({
   logoContent: {
     marginTop: 80,
     marginBottom: 40,
+  },
+  logoTextImage: {
+    width: 150,
+    height: 42,
+    marginBottom: 15,
   },
   buttonContainer:{
     marginTop: 'auto',
