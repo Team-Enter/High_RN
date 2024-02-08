@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import EmptyView from './EmptyView';
 
 // 입력 텍스트 필드
-const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, errorBorderColor, secureTextEntry }) => {
+const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, secureTextEntry, onChangeText }) => {
   const [borderColor, setBorderColor] = useState('#B7B7B7');
   const [showPassword, setShowPassword] = useState(false); // 비밀번호 보이기 상태 추가
 
@@ -29,6 +29,7 @@ const InputTextField = ({ placeholder, label, errorMessage, onFocus, onBlur, err
           onFocus={handleFocus}
           onBlur={handleBlur}
           secureTextEntry={secureTextEntry && !showPassword}
+          onChangeText={onChangeText}
         />
         {secureTextEntry && (
           <TouchableOpacity onPress={() => setShowPassword(!showPassword)} style={styles.eyeIcon}>
