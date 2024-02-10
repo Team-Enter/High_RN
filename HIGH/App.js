@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import StartScreen from "./src/screens/StartScreen";
@@ -28,17 +27,17 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        {/* <Stack.Screen name="StartScreen" component={StartScreen} />
+        <Stack.Screen name="StartScreen" component={StartScreen} />
         <Stack.Screen name="JoinEmailIdPasswordScreen" component={JoinEmailIdPasswordScreen} />
         <Stack.Screen name="JoinNicknameScreen" component={JoinNicknameScreen}/>
-        <Stack.Screen name="LoginScreen" component={LoginScreen} /> */}
-        {/* <Stack.Screen name="MainPageScreen" component={MainPageScreen} /> */}
-        {/* <Stack.Screen name="TestStartScreen" component={TestStartScreen} />
-        <Stack.Screen name="TestQuestionScreen" component={TestQuestionScreen} /> */}
+        <Stack.Screen name="LoginScreen" component={LoginScreen} />
+        <Stack.Screen name="MainPageScreen" component={MainPageScreen} />
+        <Stack.Screen name="TestStartScreen" component={TestStartScreen} />
+        <Stack.Screen name="TestQuestionScreen" component={TestQuestionScreen} />
         <Stack.Screen name="TestResultLoadingScreen" component={TestResultLoadingScreen} />
         <Stack.Screen name="TestResultScreen" component={TestResultScreen} />
-        {/* <Stack.Screen name="TestResultHighschoolScreen" component={TestResultHighschoolScreen} />
-        <Stack.Screen name="HighschoolDetailScreen" component={HighschoolDetailScreen} /> */}
+        <Stack.Screen name="TestResultHighschoolScreen" component={TestResultHighschoolScreen} />
+        <Stack.Screen name="HighschoolDetailScreen" component={HighschoolDetailScreen} />
         <Stack.Screen name="MyPageScreen" component={MyPageScreen} />
       </Stack.Navigator>
     </NavigationContainer>
