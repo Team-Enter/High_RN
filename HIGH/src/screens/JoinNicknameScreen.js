@@ -1,7 +1,7 @@
 import { View, StyleSheet, Image, Alert } from 'react-native'
 import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import LogoText from '../components/LogoText'
+// import LogoText from '../components/LogoText'
 import Title from '../components/Title'
 import InputTextField from '../components/InputTextField'
 import DefaultButton from '../components/DefaultButton'

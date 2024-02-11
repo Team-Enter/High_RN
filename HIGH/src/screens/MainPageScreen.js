@@ -3,7 +3,7 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useNavigation } from '@react-navigation/native';
 import HighschoolList from '../components/HighschoolList';
-import TopBarTitle from '../components/TopBarTitle';
+// import TopBarTitle from '../components/TopBarTitle';
 
 // 메인페이지
 const MainPageScreen = () => {
