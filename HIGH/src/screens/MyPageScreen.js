@@ -71,9 +71,27 @@ const MyPageScreen = () => {
     setIsBugReportModalVisible(!isBugReportModalVisible);
   };
 
-  const handleLogoutConfirm = () => {
-    navigation.navigate('StartScreen')
-    setIsLogoutModalVisible(false);
+  const handleLogoutConfirm = async () => {
+    try {
+      const response = await fetch('http://localhost:8080/user/logout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      if (response.ok) {
+        // 로그아웃 성공
+        navigation.navigate('StartScreen');
+        setIsLogoutModalVisible(false);
+      } else {
+        // 로그아웃 실패
+        const errorData = await response.json();
+        Alert.alert('로그아웃 실패', errorData.message);
+      }
+    } catch (error) {
+      console.error('Error', error);
+      Alert.alert('오류', '서버와의 통신 중 오류가 발생했습니다.')
+    }
   };
 
   const handleBugReportConfirm = () => {
