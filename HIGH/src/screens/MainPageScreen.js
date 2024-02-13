@@ -3,7 +3,7 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useNavigation } from '@react-navigation/native';
 import HighschoolList from '../components/HighschoolList';
-// import TopBarTitle from '../components/TopBarTitle';
+
 
 // 메인페이지
 const MainPageScreen = () => {
@@ -22,7 +22,6 @@ const MainPageScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topBar}>
-        {/* <TopBarTitle title="HIGH"/> 상단바 로고 */}
         <Image
           source={require('../../assets/images/Logo_HIGH.jpg')}
           style={styles.logoTextImage}

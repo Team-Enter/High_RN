@@ -3,7 +3,6 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import DefaultButton from '../components/DefaultButton'
 import { useNavigation } from '@react-navigation/native'
-// import LogoText from '../components/LogoText'
 
 // 시작화면
 const StartScreen = () => {
@@ -23,7 +22,6 @@ const StartScreen = () => {
           source={require('../../assets/images/Logo.jpg')}
           style={[styles.logoImage, {marginTop: 180}]}
         />
-        {/* <LogoText/> 로고 텍스트 */}
         <Image 
           source={require('../../assets/images/Logo_HIGH.jpg')}
           style={styles.logoTextImage}

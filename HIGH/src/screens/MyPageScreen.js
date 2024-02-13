@@ -6,7 +6,6 @@ import PeopleInfo from '../components/PeopleInfo';
 import MyPageButton from '../components/MyPageButton';
 import ModalLogOut from '../components/ModalLogOut';
 import ModalBug from '../components/ModalBug';
-// import TopBarTitle from '../components/TopBarTitle';
 
 // 마이페이지
 const MyPageScreen = () => {
