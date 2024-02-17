@@ -14,15 +14,15 @@ const StartScreen = () => {
   const handleLoginPress = () => {
     navigation.navigate('LoginScreen');
   };
-  
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Image 
+        <Image
           source={require('../../assets/images/Logo.jpg')}
           style={[styles.logoImage, {marginTop: 180}]}
         />
-        <Image 
+        <Image
           source={require('../../assets/images/Logo_HIGH.jpg')}
           style={styles.logoTextImage}
         />
@@ -34,7 +34,7 @@ const StartScreen = () => {
         <Text style={[styles.loginText, {fontWeight: 400}]}>
           이미 계정이 있으신가요?
         </Text>
-        <TouchableOpacity 
+        <TouchableOpacity
           onPress={handleLoginPress}
         >
           <Text style={[styles.loginText, {fontWeight:700}]}>
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   loginTextView: {
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   loginText: {
     color: '#000',
