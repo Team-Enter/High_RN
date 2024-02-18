@@ -6,6 +6,9 @@ import InputTextField from '../components/InputTextField';
 import DefaultButton from '../components/DefaultButton';
 import { useNavigation } from '@react-navigation/native';
 
+// 환경 변수
+const { DB_HOST } = process.env; // DB_HOST 환경 변수 사용
+
 // 회원가입_이메일, 아이디, 비밀번호
 const JoinEmailIdPasswordScreen = () => {
   const [accountId, setAccountId] = useState('');
@@ -17,7 +20,7 @@ const JoinEmailIdPasswordScreen = () => {
   const handleNextJoin = async () => {
 
     try {
-      const response = await fetch('http://localhost:8080/user/signup', {
+      const response = await fetch(`http://${DB_HOST}/user/signup`, {
         method: 'POST',
         headers: {
           'Content-Type' : 'application/json',
@@ -64,6 +67,7 @@ const JoinEmailIdPasswordScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.logoContent}>
+        {/* <LogoText/> 로고 텍스트 */}
         <Image
           source={require('../../assets/images/Logo_HIGH.jpg')}
           style={styles.logoTextImage}
